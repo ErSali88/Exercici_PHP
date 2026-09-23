@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* Contenido principal */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* Producto */
+.producte {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.producte h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #222;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+/* Descripción */
+.descripcio {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Precio */
+.preu,
+.preuIva {
+    margin: 10px 0;
+}
+
+/* Total */
+.total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    border-top: 2px solid #eee;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Stock y referencia */
+.estoc,
+.ref {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
