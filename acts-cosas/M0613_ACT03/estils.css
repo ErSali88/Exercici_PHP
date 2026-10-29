@@ -1,0 +1,63 @@
+/* Cos de la pagina: amplada maxima i centrat */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Les etiquetes a sobre del seu camp, cadascuna a la seva linia */
+label {
+    display: block;
+    margin-top: .8rem;
+}
+
+/* Que tots els camps facin la mateixa amplada */
+input[type="text"], input[type="email"], input[type="password"],
+input[type="date"], input[type="tel"], select {
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+}
+
+/* Els fieldset separats els uns dels altres */
+fieldset {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+/* El boto d'enviar amb color de fons */
+button {
+    background: #1F7A7A;
+    color: white;
+    border: none;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+}
+
+/* El boto canvia en passar-hi el ratoli */
+button:hover {
+    background: #145555;
+}
+
+/* La taula del resum */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: .5rem;
+}
+
+/* Capcalera amb color de fons */
+th {
+    background: #1F7A7A;
+    color: white;
+}
+
+/* Files alternes de la taula del resum */
+tr:nth-child(even) td {
+    background: #F4F7F7;
+}

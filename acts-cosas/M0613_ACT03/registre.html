@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre BitBazar</title>
+
+    <!-- Enllacem el full d'estils -->
+    <link rel="stylesheet" href="estils.css">
+
+</head>
+<body>
+
+    <h1>Registre de BitBazar</h1>
+
+    <!-- action: on van les dades -->
+    <!-- method: com hi van (post) -->
+
+    <form action="processa.php" method="post">
+
+        <!-- GRUP 1: Dades personals -->
+        <fieldset>
+
+            <legend>Dades personals</legend>
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom">
+
+            <label for="cognoms">Cognoms</label>
+            <input type="text" id="cognoms" name="cognoms">
+
+            <label for="naixement">Data de naixement</label>
+            <input type="date" id="naixement" name="naixement">
+
+            <label for="telefon">Telèfon</label>
+            <input type="tel" id="telefon" name="telefon">
+
+        </fieldset>
+
+        <!-- GRUP 2: Dades del compte -->
+        <fieldset>
+
+            <legend>Dades del compte</legend>
+
+            <label for="correu">Correu</label>
+            <input type="email" id="correu" name="correu">
+
+            <label for="usuari">Nom d'usuari</label>
+            <input type="text" id="usuari" name="usuari">
+
+            <label for="clau">Contrasenya</label>
+            <input type="password" id="clau" name="clau">
+
+            <label for="clau2">Repeteix la contrasenya</label>
+            <input type="password" id="clau2" name="clau2">
+
+        </fieldset>
+
+        <!-- GRUP 3: Adreça -->
+        <fieldset>
+
+            <legend>Adreça</legend>
+
+            <label for="carrer">Carrer i número</label>
+            <input type="text" id="carrer" name="carrer">
+
+            <label for="poblacio">Població</label>
+            <input type="text" id="poblacio" name="poblacio">
+
+            <label for="codipostal">Codi postal</label>
+            <input type="text" id="codipostal" name="codipostal">
+
+        </fieldset>
+
+        <!-- GRUP 4: Preferències -->
+        <fieldset>
+
+            <legend>Preferències</legend>
+
+            <label for="tipus">Tipus de client</label>
+            <select id="tipus" name="tipus">
+                <option value="">Tria una opció</option>
+                <option value="particular">Particular</option>
+                <option value="empresa">Empresa</option>
+                <option value="estudiant">Estudiant</option>
+            </select>
+
+            <!-- Els botons d'opció comparteixen el name i es diferencien pel value -->
+            <p class="grup">Com ens has conegut?</p>
+
+            <label class="linia">
+                <input type="radio" name="origen" value="xarxes"> Xarxes socials
+            </label>
+
+            <label class="linia">
+                <input type="radio" name="origen" value="amics"> Un amic o amiga
+            </label>
+
+            <!-- Les caselles que no es marquen NO s'envien -->
+            <label class="linia">
+                <input type="checkbox" name="butlleti" value="si"> Vull rebre ofertes
+            </label>
+
+            <label class="linia">
+                <input type="checkbox" name="condicions" value="si"> Accepto les condicions
+            </label>
+
+        </fieldset>
+
+        <button type="submit">Crear el compte</button>
+
+    </form>
+
+</body>
+</html>
