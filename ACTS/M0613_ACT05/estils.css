@@ -1,0 +1,86 @@
+/* Hoja de estilos compartida por todas las páginas de la ACT05 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+    background: #f4f6f8;
+    color: #222222;
+}
+
+header {
+    background: #044474;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0 -20px 20px -20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0 0;
+}
+
+footer {
+    background: #044474;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px -20px 0 -20px;
+}
+
+h2 {
+    color: #044474;
+    border-bottom: 3px solid #f0b828;
+    padding-bottom: 5px;
+}
+
+.graella {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.targeta {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.targeta h3 {
+    margin-top: 0;
+    color: #044474;
+}
+
+.estat {
+    font-weight: bold;
+}
+
+.esgotat {
+    color: #b00020;
+}
+
+.ultimes {
+    color: #c77700;
+}
+
+.disponible {
+    color: #1b7f3b;
+}
+
+.missatge {
+    background: #fff3cd;
+    border-left: 5px solid #f0b828;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.error {
+    background: #fde8e8;
+    border-left: 5px solid #b00020;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}

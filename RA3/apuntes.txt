@@ -1,0 +1,19 @@
+Quina faig servir?
+
+config.php          require_once    Constantsi valors fixos. Nomes una vegada
+funcions.php        require_once    Si es declara dues vegades, error fatal.
+capcelera.php       require_once    Sense disseny la pagina no serveix
+peu.php             require_once    Igual que la capcelera
+Un bloc opcional    include         Un baner, un avis... si falta, tant se val.
+
+Les variables travessen l'include
+    Per aixo la capcelera pot tenir un titol diferent a cada pagina
+
+
+El patro: quatre fitxers
+
+config.php      Valors que es fan servir a mes d'un lloc: el nom de la botiga, les mides minimes, les rutes. No escriu res a la pantalla
+funcions.php    Totes les funcions propies
+capcelera.php
+peu.php
+
